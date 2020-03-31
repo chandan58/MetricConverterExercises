@@ -5,9 +5,9 @@
 
 /* Task 2: Uncomment the following functions one by one and provide
  * implementations for them in converter.c. After you implement a function,
- * uncomment the corresponding test in main.c, make sure that it passes,
- * then commit your changes. After all three functions are implemented and
- * committed - push your changes */
+ * commit your changes. After all three functions are implemented and
+ * committed, uncomment the corresponding tests in main.c, make sure that they
+ * pass, then push your changes */
 
 // double centimetres_to_millimetres(double centimetres);
 // double metres_to_centimetres(double metres);
@@ -15,9 +15,9 @@
 
 /* Task 3: Uncomment the following functions one by one and provide
  * implementations for them in converter.c. After you implement a function,
- * uncomment the corresponding test in main.c, make sure that it passes,
- * then commit your changes. After all three functions are implemented and
- * committed - push your changes */
+ * commit your changes. After all three functions are implemented and
+ * committed, uncomment the corresponding tests in main.c, make sure that they
+ * pass, then push your changes */
 
 // double millimetres_to_centimetres(double millimetres);
 // double centimetres_to_metres(double centimetres);
@@ -25,9 +25,9 @@
 
 /* Task 4: Uncomment the following functions one by one and provide
  * implementations for them in converter.c. After you implement a function,
- * uncomment the corresponding test in main.c, make sure that it passes,
- * then commit your changes. After all six functions are implemented and
- * committed - push your changes */
+ * commit your changes. After all three functions are implemented and
+ * committed, uncomment the corresponding tests in main.c, make sure that they
+ * pass, then push your changes */
 
 // double metres_to_millimetres(double metres);
 // double millimetres_to_metres(double millimetres);
