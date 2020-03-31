@@ -1,0 +1,118 @@
+\documentclass{article}
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+
+\lstset{showstringspaces=false,language=C}
+
+\newcommand{\shortanswer}{\paragraph{Answer:} $\rule{5cm}{0.15mm}$}
+\newcommand{\longanswer}[1]{\begin{tcolorbox}[sharpish corners,colback=white,boxrule=1pt]
+\newcount\counter
+\counter=#1
+\loop
+  \bigskip
+  \advance \counter -1
+\ifnum \counter>0
+\repeat
+\end{tcolorbox}}
+
+\begin{document}
+
+\title{Programming in C. Converter for Metric Measures of Length}
+\author{Oleksandr Zaitsev\\ Inria Lille - Nord Europe\\ Polytech Lille}
+\date{}
+\maketitle
+
+To work on the exercise, you must fork the repository \url{https://github.com/olekscode/MetricConverterExercises} and clone it to your personal computer.
+
+In this exercise, you will write functions to convert different measures of length in the metric system. There are 10 millimetres in centimetre, 100 centimetres in a metre, 1000 metres in a kilometre.
+
+\section*{Task 1}
+
+Add three \#define pragmas into \emph{converter.h} and use them to store the constant values given above:
+
+\begin{enumerate}
+\item \lstinline{MILLIMETRES_IN_CENTIMETRE}
+\item \lstinline{CENTIMETRES_IN_METRE}
+\item \lstinline{METRES_IN_KILOMETRE}
+\end{enumerate}
+
+Commit and push your changes.
+
+\section*{Task 2}
+
+Create a file \emph{converter.c}, include file \emph{converter.h} and perform the following steps for each function from the list below:
+
+\begin{enumerate}
+\item Uncomment this function in \emph{converter.h}
+\item Implement the function in \emph{converter.c}
+\item Commit your changes (do not push them!)
+\end{enumerate}
+
+After all three functions are implemented, uncomment the line \lstinline{#include "tests/tests_task2.h"} in \emph{main.c} and three tests:
+
+\begin{lstlisting}
+test_centimetres_to_millimetres();
+test_metres_to_centimetres();
+test_kilometres_to_metres();
+\end{lstlisting}
+
+Compile and run your code, make sure that tests pass. Then push your changes (do not push the executable, you can add it to \emph{.gitignore}).
+
+Here is the list of functions that you need to implement for this task:
+
+\begin{itemize}
+\item Implement function \lstinline{double centimetres_to_millimetres(double centimetres)} using pragma \lstinline{MILLIMETRES_IN_CENTIMETRE}.
+\item Implement function \lstinline{double centimetres_to_millimetres(double centimetres)} using pragma \lstinline{CENTIMETRES_IN_METRE}.
+\item Implement function \lstinline{double kilometres_to_metres(double kilometres)} using pragma \lstinline{METRES_IN_KILOMETRE}.
+\end{itemize}
+
+\section*{Task 3}
+
+Follow the same steps as for Task 2 for each of the functions (remember that you must commit every function separately, but push them together):
+
+\begin{itemize}
+\item Implement function \lstinline{double millimetres_to_centimetres(double millimetres)} using pragma \lstinline{MILLIMETRES_IN_CENTIMETRE}.
+\item Implement function \lstinline{double centimetres_to_metres(double centimetres)} using pragma \lstinline{CENTIMETRES_IN_METRE}.
+\item Implement function \lstinline{double metres_to_kilometres(double metres) }using pragma \lstinline{METRES_IN_KILOMETRE}.
+\end{itemize}
+
+Uncomment the line \lstinline{#include "tests/tests_task3.h"} in \emph{main.c} then uncomment and run the following tests:
+
+\begin{lstlisting}
+test_millimetres_to_centimetres();
+test_centimetres_to_metres();
+test_metres_to_kilometres();
+\end{lstlisting}
+
+If all the tests pass (should be 6 tests by now), push your changes.
+
+\section*{Task 4}
+
+Follow the same steps as for Task 2 for each of the functions (remember that you must commit every function separately, but push them together):
+
+\begin{itemize}
+\item Implement function \lstinline{double metres_to_millimetres(double metres) } using functions \lstinline{metres_to_centimetres} and \lstinline{centimetres_to_millimetres}.
+\item Implement function \lstinline{double millimetres_to_metres(double millimetres)} using functions \lstinline{millimetres_to_centimetres} and \lstinline{centimetres_to_metres}.
+\item Implement function \lstinline{double kilometres_to_millimetres(double kilometres)} using functions \lstinline{kilometres_to_metres} and \lstinline{metres_to_millimetres}.
+\item Implement function \lstinline{double millimetres_to_kilometres(double millimetres)} using functions \lstinline{millimetres_to_metres} and \lstinline{metres_to_kilometres}.
+\item Implement function \lstinline{double kilometres_to_centimetres(double kilometres)} using functions \lstinline{kilometres_to_metres} and \lstinline{metres_to_centimetres}.
+\item Implement function \lstinline{double centimetres_to_kilometres(double centimetres)} using functions \lstinline{centimetres_to_metres} and \lstinline{metres_to_kilometres}.
+\end{itemize}
+
+Uncomment the line \lstinline{#include "tests/tests_task4.h"} in \emph{main.c} then uncomment and run the following tests:
+
+\begin{lstlisting}
+test_metres_to_millimetres();
+test_millimetres_to_metres();
+test_kilometres_to_millimetres();
+test_millimetres_to_kilometres();
+test_kilometres_to_centimetres();
+test_centimetres_to_kilometres();
+\end{lstlisting}
+
+If all the tests pass (should be 12 tests by now), push your changes.
+
+\end{document}
