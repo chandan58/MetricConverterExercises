@@ -24,21 +24,21 @@ double kilometres_to_metres(double kilometres)
 
 //TASK 3
 
-double millimetres_to_centimetres(double millimetres);
+double millimetres_to_centimetres(double millimetres)
 {
     double centimetres;
     centimetres = millimetres/MILLIMETRES_IN_CENTIMETRE;
     return centimetres;
 }
 
-double centimetres_to_metres(double centimetres);
+double centimetres_to_metres(double centimetres)
 {
     double metres;
     metres = centimetres/CENTIMETRES_IN_METRE;
     return metres;
 }
 
-double metres_to_kilometres(double metres);
+double metres_to_kilometres(double metres)
 {
     double kilometres;
     kilometres = metres/METRES_IN_KILOMETRE;
@@ -47,7 +47,7 @@ double metres_to_kilometres(double metres);
 
 //TASK 4
 
-double metres_to_millimetres(double metres);
+double metres_to_millimetres(double metres)
 {
     double millimetres,centimetres;
     centimetres = metres_to_centimetres(metres);
@@ -55,7 +55,7 @@ double metres_to_millimetres(double metres);
     return millimetres;
 }
 
-double millimetres_to_metres(double millimetres);
+double millimetres_to_metres(double millimetres)
 {
     double metres,centimetres;
     centimetres = metres_to_centimetres(millimetres);
@@ -63,7 +63,7 @@ double millimetres_to_metres(double millimetres);
     return metres;
 }
 
-double kilometres_to_millimetres(double kilometres);
+double kilometres_to_millimetres(double kilometres)
 {
     double millimetres,metres;
     metres = kilometres_to_metres(kilometres);
@@ -71,7 +71,7 @@ double kilometres_to_millimetres(double kilometres);
     return millimetres;
 }
 
-double millimetres_to_kilometres(double millimetres);
+double millimetres_to_kilometres(double millimetres)
 {
     double kilometres,metres;
     metres = millimetres_to_metres(millimetres);
@@ -79,7 +79,7 @@ double millimetres_to_kilometres(double millimetres);
     return kilometres;
 }
 
-double kilometres_to_centimetres(double kilometres);
+double kilometres_to_centimetres(double kilometres)
 {
     double centimetres,metres;
     metres = kilometres_to_metres(kilometres);
@@ -87,7 +87,7 @@ double kilometres_to_centimetres(double kilometres);
     return centimetres;
 }
 
-double centimetres_to_kilometres(double centimetres);
+double centimetres_to_kilometres(double centimetres)
 {
     double kilometres,metres;
     metres = centimetres_to_metres(centimetres);
