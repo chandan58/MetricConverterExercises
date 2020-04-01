@@ -24,7 +24,7 @@
 
  double millimetres_to_centimetres(double millimetres);
  double centimetres_to_metres(double centimetres);
-// double metres_to_kilometres(double metres);
+ double metres_to_kilometres(double metres);
 
 /* Task 4: Uncomment the following functions one by one and provide
  * implementations for them in converter.c. After you implement a function,

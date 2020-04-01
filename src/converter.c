@@ -36,3 +36,10 @@ double centimetres_to_metres(double centimetres);
     metres = centimetres/CENTIMETRES_IN_METRE;
     return metres;
 }
+
+double metres_to_kilometres(double metres);
+{
+    double kilometres;
+    kilometres = metres/METRES_IN_KILOMETRE;
+    return kilometres;
+}
