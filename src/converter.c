@@ -77,3 +77,11 @@ double millimetres_to_kilometres(double millimetres);
     kilometres = metres_to_kilometres(metres);
     return kilometres;
 }
+
+double kilometres_to_centimetres(double kilometres);
+{
+    double centimetres,metres;
+    metres = kilometres_to_metres(kilometres);
+    centimetres = metres_to_centimetres(metres);
+    return centimetres;
+}
