@@ -22,7 +22,7 @@
  * committed, uncomment the corresponding tests in main.c, make sure that they
  * pass, then push your changes */
 
-// double millimetres_to_centimetres(double millimetres);
+ double millimetres_to_centimetres(double millimetres);
 // double centimetres_to_metres(double centimetres);
 // double metres_to_kilometres(double metres);
 
