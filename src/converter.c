@@ -53,3 +53,11 @@ double metres_to_millimetres(double metres);
     millimetres = centimetres_to_millimetres(centimetres);
     return millimetres;
 }
+
+double millimetres_to_metres(double millimetres);
+{
+    double metres,centimetres;
+    centimetres = metres_to_centimetres(millimetres);
+    metres = centimetres_to_metres(centimetres);
+    return metres;
+}

@@ -33,7 +33,7 @@
  * pass, then push your changes */
 
  double metres_to_millimetres(double metres);
-// double millimetres_to_metres(double millimetres);
+ double millimetres_to_metres(double millimetres);
 // double kilometres_to_millimetres(double kilometres);
 // double millimetres_to_kilometres(double millimetres);
 // double kilometres_to_centimetres(double kilometres);
