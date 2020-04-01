@@ -43,3 +43,13 @@ double metres_to_kilometres(double metres);
     kilometres = metres/METRES_IN_KILOMETRE;
     return kilometres;
 }
+
+//TASK 4
+
+double metres_to_millimetres(double metres);
+{
+    double millimetres,centimetres;
+    centimetres = metres_to_centimetres(metres);
+    millimetres = centimetres_to_millimetres(centimetres);
+    return millimetres;
+}
