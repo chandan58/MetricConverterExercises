@@ -20,3 +20,19 @@ double kilometres_to_metres(double kilometres)
     metres = kilometres * METRES_IN_KILOMETRE;
     return metres;
 }
+
+//TASK 3
+
+double millimetres_to_centimetres(double millimetres);
+{
+    double centimetres;
+    centimetres = millimetres/MILLIMETRES_IN_CENTIMETRE;
+    return centimetres;
+}
+
+double centimetres_to_metres(double centimetres);
+{
+    double metres;
+    metres = centimetres/CENTIMETRES_IN_METRE;
+    return metres;
+}
